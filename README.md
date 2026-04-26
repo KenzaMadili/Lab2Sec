@@ -176,11 +176,7 @@ adb shell ls -la /data/data/org.fdroid.fdroid/
 - **Modèle de permissions** : le root bypasse entièrement le système de permissions utilisateur.
 - **Verified Boot (AVB 2.0)** : vérifie l'intégrité des partitions au démarrage via une chaîne de confiance.
 
-| État | Signification |
-|------|--------------|
-| 🟢 Green | Système intègre, aucune modification détectée |
-| 🟡 Yellow/Orange | Partition modifiée, clé personnalisée détectée |
-| 🔴 Red | Compromission détectée — système non fiable |
+
 
 > *Verified Boot n'est pas disponible sur l'émulateur Genymotion.*
 
@@ -247,6 +243,8 @@ adb emu avd wipe-data
 
 > ✅ **Reset effectué** — L'AVD a été wipé en fin de session. F-Droid et tous les artefacts ont été supprimés. L'émulateur affiche l'écran de configuration initial (état usine).
 
+<img width="2056" height="1328" alt="image-enhancer-1777240506161" src="https://github.com/user-attachments/assets/5425b367-2987-4f6f-98fd-58f939563bcf" />
+
 ---
 
 ## ✅ Checklist Finale
@@ -305,4 +303,4 @@ Le rooting de l'AVD Genymotion Android 11 a été réalisé avec succès. Ce lab
 
 ---
 
-*Lab réalisé par **kenza** — Genymotion Android 11 API 30*
+*Lab réalisé par **MADILI Kenza** — Genymotion Android 11 API 30*
