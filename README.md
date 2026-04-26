@@ -48,6 +48,7 @@ Ce laboratoire vise à comprendre les implications du **rooting sur Android** :
 ```bash
 adb devices
 ```
+<img width="4792" height="2030" alt="image-enhancer-1777239815127" src="https://github.com/user-attachments/assets/013575b0-4a85-4727-9692-2fe770a90fb7" />
 
 > Résultat : `192.168.56.102:5555` reconnu et actif.
 
@@ -58,6 +59,7 @@ adb devices
 ```bash
 adb root
 ```
+<img width="1188" height="402" alt="image-enhancer-1777239875192" src="https://github.com/user-attachments/assets/8da67e77-69a3-4a0a-be29-14259bf5168a" />
 
 > Relance le démon ADB avec les privilèges super-utilisateur.
 
@@ -68,6 +70,7 @@ adb root
 ```bash
 adb remount
 ```
+<img width="1132" height="398" alt="image-enhancer-1777239915852" src="https://github.com/user-attachments/assets/2911fa00-ce3a-4243-a779-45c181e941b4" />
 
 > Monte `/system` en lecture/écriture.
 
@@ -79,6 +82,7 @@ adb remount
 adb shell id
 # → uid=0(root) gid=0(root)
 ```
+<img width="1990" height="536" alt="image-enhancer-1777239966851" src="https://github.com/user-attachments/assets/d2f8e8ad-4514-4cbf-8f01-c5f530e3bde9" />
 
 ---
 
@@ -88,6 +92,7 @@ adb shell id
 adb shell "su -c id"
 # → uid=0(root)
 ```
+<img width="1364" height="432" alt="image-enhancer-1777240011361" src="https://github.com/user-attachments/assets/51b1e378-43da-47ce-8225-cd17235ab293" />
 
 ---
 
@@ -97,6 +102,7 @@ adb shell "su -c id"
 adb shell getprop ro.build.version.release
 # → 11
 ```
+<img width="1768" height="348" alt="image-enhancer-1777240155906" src="https://github.com/user-attachments/assets/3efe6f98-7fbf-48ca-82ce-96b093bfb497" />
 
 ---
 
@@ -105,6 +111,7 @@ adb shell getprop ro.build.version.release
 ```bash
 adb logcat -d > logcat_root_check.txt
 ```
+<img width="2426" height="626" alt="image-enhancer-1777240204257" src="https://github.com/user-attachments/assets/8378a758-786c-41de-a8d0-bbdb2eee149c" />
 
 ---
 
@@ -113,6 +120,7 @@ adb logcat -d > logcat_root_check.txt
 ```bash
 adb install F-Droid.apk
 ```
+<img width="1460" height="518" alt="image-enhancer-1777240246872" src="https://github.com/user-attachments/assets/6f447ec0-46c4-4e0f-8a07-27a745dda611" />
 
 ---
 
@@ -121,6 +129,7 @@ adb install F-Droid.apk
 ```bash
 adb shell cmd package resolve-activity --brief org.fdroid.fdroid
 ```
+<img width="2386" height="492" alt="image-enhancer-1777240291516" src="https://github.com/user-attachments/assets/99535f01-7270-49e2-99fb-b4b110b29aa1" />
 
 ---
 
@@ -129,6 +138,7 @@ adb shell cmd package resolve-activity --brief org.fdroid.fdroid
 ```bash
 adb shell am start -n org.fdroid.fdroid/.views.main.MainActivity
 ```
+<img width="2566" height="514" alt="image-enhancer-1777240375020" src="https://github.com/user-attachments/assets/9ae8b886-0e76-4839-acbb-9acf422de9e4" />
 
 ---
 
@@ -137,6 +147,7 @@ adb shell am start -n org.fdroid.fdroid/.views.main.MainActivity
 ```bash
 adb shell ls -la /data/data/org.fdroid.fdroid/
 ```
+<img width="1480" height="658" alt="image-enhancer-1777240544269" src="https://github.com/user-attachments/assets/0d95163b-a44c-4a04-8104-0f5b882e17a1" />
 
 > **⚠️ Impact Sécurité :** L'accès à `/data/data/<package>/` avec root expose toutes les données privées : bases SQLite, tokens, clés API, préférences partagées.
 
