@@ -243,7 +243,7 @@ adb emu avd wipe-data
 
 > ✅ **Reset effectué** — L'AVD a été wipé en fin de session. F-Droid et tous les artefacts ont été supprimés. L'émulateur affiche l'écran de configuration initial (état usine).
 
-<img width="2056" height="1328" alt="image-enhancer-1777240506161" src="https://github.com/user-attachments/assets/5425b367-2987-4f6f-98fd-58f939563bcf" />
+
 
 ---
 
