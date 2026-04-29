@@ -1,16 +1,12 @@
 # 📱 Lab Rooting Android — Analyse de Sécurité Mobile
 
-> **Environnement :** Genymotion AVD · Android 11 API 30  
+> **Environnement :** · Android 11 API 30  
 > **Auteur :** MADILI Kenza  
 
 
 ---
 
-## ⚠️ Avertissement légal
 
-> Toutes les manipulations ont été réalisées sur un **émulateur Genymotion dédié**.  
-> Aucune donnée réelle n'a été utilisée.  
-> Réseau : **Host-Only** — Environnement totalement isolé.
 
 ---
 
