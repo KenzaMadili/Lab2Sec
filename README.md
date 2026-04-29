@@ -46,7 +46,8 @@ Ce laboratoire vise à comprendre les implications du **rooting sur Android** :
 ```bash
 adb devices
 ```
-<img width="4792" height="2030" alt="image-enhancer-1777239815127" src="https://github.com/user-attachments/assets/013575b0-4a85-4727-9692-2fe770a90fb7" />
+<img width="970" height="164" alt="Capture d&#39;écran 2026-04-29 132704" src="https://github.com/user-attachments/assets/51c7f483-b8c3-4939-817c-501bc032e299" />
+
 
 > Résultat : `192.168.56.102:5555` reconnu et actif.
 
@@ -57,6 +58,7 @@ adb devices
 ```bash
 adb root
 ```
+<img width="889" height="81" alt="Capture d&#39;écran 2026-04-29 132729" src="https://github.com/user-attachments/assets/1854111f-9537-4f90-9452-fc7240763e6d" />
 
 
 > Relance le démon ADB avec les privilèges super-utilisateur.
