@@ -31,7 +31,6 @@ Ce laboratoire vise à comprendre les implications du **rooting sur Android** :
 | PC Hôte | Windows 10/11 |
 | Émulateur | Genymotion Personal Edition |
 | Version Android | Android 11 (API 30) |
-| Adresse AVD | `192.168.56.102:5555` |
 | Outil | ADB (Android Debug Bridge) |
 | Réseau | Host-Only (isolé) |
 | SELinux | Mode Permissive |
@@ -49,7 +48,6 @@ adb devices
 <img width="970" height="164" alt="Capture d&#39;écran 2026-04-29 132704" src="https://github.com/user-attachments/assets/51c7f483-b8c3-4939-817c-501bc032e299" />
 
 
-> Résultat : `192.168.56.102:5555` reconnu et actif.
 
 ---
 
