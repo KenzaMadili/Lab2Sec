@@ -27,7 +27,7 @@ Avant toute manipulation, nous vérifions que l'instance est reconnue par les ou
 - **Commande :** `adb devices`
 - **Statut :** Le daemon ADB démarre avec succès sur le port 5037. L'appareil `emulator-5554` est listé.
 
-### 3. Escalade de privilèges (Shell Root)
+### 3. Escalade de privilèges (Shell Root) et Analyse des sécurités système (dm-verity):
 Nous vérifions l'identité de l'utilisateur actuel dans le système Android.
 <img width="697" height="199" alt="Capture d’écran 2026-04-30 130012" src="https://github.com/user-attachments/assets/4c2dfe3c-ff44-491f-9262-b56f9a4bf5f2" />
 
@@ -35,7 +35,7 @@ Nous vérifions l'identité de l'utilisateur actuel dans le système Android.
 - **Résultat :** `uid=0(root) gid=0(root)`. 
 - **Analyse :** J'ai obtenu un accès root au niveau du shell, permettant de lire des fichiers protégés mais pas encore de modifier la partition système.
 
-### 4. Analyse des sécurités système (dm-verity)
+### 
 Pour modifier le système, il est nécessaire de désactiver la vérification d'intégrité au démarrage.
 
 
