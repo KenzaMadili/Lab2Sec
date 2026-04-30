@@ -29,7 +29,7 @@ Avant toute manipulation, nous vérifions que l'instance est reconnue par les ou
 
 ### 3. Escalade de privilèges (Shell Root)
 Nous vérifions l'identité de l'utilisateur actuel dans le système Android.
-<img width="700" height="191" alt="Capture d’écran 2026-04-30 125749" src="https://github.com/user-attachments/assets/5a5127c5-3524-4e97-80eb-66cf0b7e3128" />
+<img width="697" height="199" alt="Capture d’écran 2026-04-30 130012" src="https://github.com/user-attachments/assets/4c2dfe3c-ff44-491f-9262-b56f9a4bf5f2" />
 
 - **Commande :** `adb shell id`
 - **Résultat :** `uid=0(root) gid=0(root)`. 
@@ -37,7 +37,7 @@ Nous vérifions l'identité de l'utilisateur actuel dans le système Android.
 
 ### 4. Analyse des sécurités système (dm-verity)
 Pour modifier le système, il est nécessaire de désactiver la vérification d'intégrité au démarrage.
-<img width="697" height="199" alt="Capture d’écran 2026-04-30 130012" src="https://github.com/user-attachments/assets/4c2dfe3c-ff44-491f-9262-b56f9a4bf5f2" />
+
 
 - **Vérification du mode :** `adb shell getprop ro.boot.veritymode` -> renvoie `enforcing`.
 - **Tentative de désactivation :** `adb disable-verity`.
